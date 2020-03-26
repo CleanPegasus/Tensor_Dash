@@ -1,0 +1,199 @@
+
+.nav-open main {
+    transform: scale(.8);
+  }
+  .nav-trigger 
+  {
+    position: fixed;
+    z-index: 4;
+    top: 40px;
+    right: 40px;
+    overflow: hidden;
+    color: transparent;
+  }
+  
+  .nav-trigger span,
+  .nav-trigger span::before,
+  .nav-trigger span::after {
+    position: absolute;
+    height: 4px;
+    width: 36px;
+    background: #999999;
+  }
+  
+  .nav-trigger span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .33s ease all
+  }
+  
+  .nav-trigger span::before,
+  .nav-trigger span::after {
+    content: '';
+    top: 0;
+    left: 0;
+    transition: .33s ease all
+  }
+  
+  .nav-trigger span::before {
+    transform: translateY(-12px);
+  }
+  
+  .nav-trigger span::after {
+    transform: translateY(12px);
+  }
+  
+  .nav-trigger:hover span, 
+  .nav-trigger:hover span::before,
+  .nav-trigger:hover span::after {
+    background:grey;
+  }
+  
+  .nav-open .nav-trigger span {
+    background: transparent;
+  }
+  
+  .nav-open .nav-trigger span::before,
+  .nav-open .nav-trigger span::after {
+    background:#999999 ;
+  }
+  
+  .nav-open .nav-trigger span::before {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-open .nav-trigger span::after {
+    transform: rotate(45deg);
+  }
+  
+  .overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1C1D21;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .nav-open .overlay {
+    opacity: .6;
+    visibility: visible;
+  }
+  
+  .nav-container {
+    position: fixed;
+    z-index: 3;
+    top: 10%;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    overflow: auto;
+    transform: translateZ(0);
+    transform: translateX(100%);
+    transition: transform .5s cubic-bezier(.07,.23,.34,1);
+  }
+  
+  .nav-open .nav-container {
+    transform: translateX(0);
+  }
+
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+  
+    100% {
+      opacity: 10;
+      transform: translateX(0);
+    }
+  }
+  @media only screen and (max-width: 760px) {
+     
+      .nav-container
+      {
+          width: 50%;
+          transition: .33s ease all
+      }
+  
+  
+  }
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+html {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+ }
+ 
+ body {
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
+	/* overflow: hidden; */
+ }
+body {
+	/* font-family: montserrat, arial, verdana; */
+	background-color: #1C1D21;
+}
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: center;
+	padding-top: 10%;
+
+}
+#msform div {
+	background: linear-gradient(#83a4d4,#b6fbff);
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	position: relative;
+	border-radius: 30px;
+}
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform .inp, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+::selection{
+	text-decoration: none;
+	-moz-user-select: none; 
+	  color: none;
+	  background: none;
+  }
+/*buttons*/
+.nextt  , .nextt:focus{
+	height: 2rem;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	outline: none;
+
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
