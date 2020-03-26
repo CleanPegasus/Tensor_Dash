@@ -5,7 +5,7 @@
     z-index: 4;
     top: 40px;
     right: 40px;
-    /* overflow: hidden; */
+    overflow: hidden;
     color: transparent;
   }
   .nav-container1 {
@@ -14,12 +14,15 @@
     top: 10%;
     right: 0;
     background: rgba(255, 255, 255, 0);
-    /* overflow: auto; */
+    overflow: auto;
     transform: translateZ(0);
     transform: translateX(100%);
     transition: transform .5s cubic-bezier(.07,.23,.34,1);
   }
   .nav-open2 , body{
+    background-color: rgba(0, 0, 0, 0.336);
+  }
+  .nav-open1 , body{
     background-color: rgba(0, 0, 0, 0.336);
   }
   .nav-open1 .nav-container1 {
@@ -55,7 +58,7 @@
     z-index: 4;
     top: 40px;
     right: 40px;
-    /* overflow: hidden; */
+    overflow: hidden;
     color: transparent;
   }
   .nav-container2 {
@@ -63,7 +66,7 @@
     z-index: 3;
     top: 10%;
     right: 0;
-    /* overflow: auto; */
+    overflow: auto;
     transform: translateZ(0);
     transform: translateX(100%);
     transition: transform .5s cubic-bezier(.07,.23,.34,1);
@@ -107,7 +110,6 @@ html {
 	margin: 0px;
 	min-height: 100%;
 	width: 100%;
-	/* overflow: hidden; */
  }
 body {
 	/* font-family: montserrat, arial, verdana; */
@@ -122,15 +124,12 @@ body {
 
 }
 #msform div {
-	background: linear-gradient(#83a4d4,#b6fbff);
+	background: linear-gradient(#1b1b1b,#141414);
 	border: 0 none;
-	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	border-radius: 50px;
 	padding: 20px 30px;
-	box-sizing: border-box;
-	width: 80%;
-	position: relative;
-	border-radius: 30px;
+  width: 80%;
+  height: 80%;
 }
 #msform fieldset:not(:first-of-type) {
 	display: none;
@@ -138,13 +137,14 @@ body {
 /*inputs*/
 #msform .inp, #msform textarea {
 	padding: 15px;
-	border: 1px solid #ccc;
+	border: 1px solid #1b1b1b;
 	border-radius: 3px;
 	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: montserrat;
-	color: #2C3E50;
+  color: rgb(253, 253, 253);
+  background-color: #141414;
 	font-size: 13px;
 }
 ::selection{
@@ -172,8 +172,8 @@ body {
 }
 
 .fs-title {
-	font-size: 15px;
+	font-size: 20px;
 	text-transform: uppercase;
-	color: #2C3E50;
+	color: #fd6e00;
 	margin-bottom: 10px;
 }
