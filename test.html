@@ -9,35 +9,58 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="#navigation" class="nav-trigger">
-    <input type="image" src="Images/login_white.png" onMouseOver="this.src='Images/login_orange.png'" onMouseOut="this.src='Images/login_white.png'" name="next" class="nextt">
-    <input type="image" src="Images/create_account_white.png" onMouseOver="this.src='Images/create_account_orange.png'" onMouseOut="this.src='Images/create_account_white.png'" name="next" class="nextt">
-        
+    <a href="#navigation1" class="nav-trigger1">
+    <input type="image" src="Images/login_white.png" onMouseOver="this.src='Images/login_orange.png'" onMouseOut="this.src='Images/login_white.png'" name="next" class="nextt">  
     </a>
-    <nav class="nav-container" >
+    <a href="#navigation2" class="nav-trigger2">
+      <input type="image" src="Images/create_account_white.png" onMouseOver="this.src='Images/create_account_orange.png'" onMouseOut="this.src='Images/create_account_white.png'" name="next" class="nextt">  
+      </a>
+    <br>
+    <nav class="nav-container1" >
         <form id="msform">
+          <span></span>
             <div>
-        
               <h2 class="fs-title">Create your account</h2>
               <p>This is just a sample to work on</p>
               <input type="email" name="email" placeholder="Email" class = "inp"/>
               <input type="password" placeholder="Password" id="password" class="inp" required>
               <input type="password" placeholder="Confirm Password" id="confirm_password" class="inp" required>
               <input type="image" src="Images/login_white.png" onMouseOver="this.src='Images/login_orange.png'" onMouseOut="this.src='Images/login_white.png'" name="next" class="nextt">
-        
             </div>
           </form>
     </nav>
+    <nav class="nav-container2" >
+      <form id="msform">
+        <span></span>
+          <div>
+            <h2 class="fs-title">Create your accouSAFASASnt</h2>
+            <p>This is just a sample to work on</p>
+            <input type="email" name="email" placeholder="Email" class = "inp"/>
+            <input type="password" placeholder="Password" id="password" class="inp" required>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" class="inp" required>
+            <input type="image" src="Images/login_white.png" onMouseOver="this.src='Images/login_orange.png'" onMouseOut="this.src='Images/login_white.png'" name="next" class="nextt">
+          </div>
+        </form>
+  </nav>
+  <div align="center">
+    Tensorflow
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
       <script>
-        var navTrigger = document.getElementsByClassName('nav-trigger')[0],
-  body = document.getElementsByTagName('body')[0];
-
-navTrigger.addEventListener('click', toggleNavigation);
-
-function toggleNavigation(event) {
-event.preventDefault();
-body.classList.toggle('nav-open');
-}
+        var navTrigger = document.getElementsByClassName('nav-trigger1')[0],
+        body = document.getElementsByTagName('body')[0];
+        navTrigger.addEventListener('click', toggleNavigation);
+        function toggleNavigation(event) {
+          event.preventDefault();
+          body.classList.toggle('nav-open1');
+        }
+        var navTrigger = document.getElementsByClassName('nav-trigger2')[0],
+        body = document.getElementsByTagName('body')[0];
+        navTrigger.addEventListener('click', toggleNavigation);
+        function toggleNavigation(event) {
+          event.preventDefault();
+          body.classList.toggle('nav-open2');
+        }
     </script>
 </body>
 </html>

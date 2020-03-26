@@ -56,7 +56,6 @@ body {
 	  color: none;
 	  background: none;
   }
-/*buttons*/
 .nextt  , .nextt:focus{
 	height: 4rem;
 	cursor: pointer;
@@ -69,9 +68,3 @@ body {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 
-.fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
-}
