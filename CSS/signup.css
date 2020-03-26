@@ -20,6 +20,8 @@ body {
 	margin: 50px auto;
 	text-align: center;
 	position: center;
+	padding-top: 10%;
+
 }
 #msform div {
 	background: linear-gradient(#83a4d4,#b6fbff);
@@ -31,12 +33,13 @@ body {
 	width: 80%;
 	margin: 0 10%;
 	position: relative;
+	border-radius: 30px;
 }
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
 /*inputs*/
-#msform input, #msform textarea {
+#msform .inp, #msform textarea {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -47,21 +50,25 @@ body {
 	color: #2C3E50;
 	font-size: 13px;
 }
+::selection{
+	text-decoration: none;
+	-moz-user-select: none; 
+	  color: none;
+	  background: none;
+  }
 /*buttons*/
-#msform .action-button {
-	width: 100px;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
+.nextt  , .nextt:focus{
+	height: 4rem;
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 5px;
+	outline: none;
+
 }
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
+
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;

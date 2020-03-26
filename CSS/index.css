@@ -1,0 +1,8 @@
+.nextt  , .nextt:focus{
+	height: 2rem;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	outline: none;
+
+}
