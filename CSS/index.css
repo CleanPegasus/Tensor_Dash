@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap');
 .nextt  , .nextt:focus{
 	height: 2rem;
 	cursor: pointer;
@@ -6,3 +7,18 @@
 	outline: none;
 
 }
+body{
+	transition: all ease .5s;
+	font-family: 'Chakra Petch', sans-serif;
+ }
+ .intro {
+	height: 85vh;
+	width: 100%;
+	display: table;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;  background-size: cover;
+	background-repeat : no-repeat;
+	transition: .33s ease all;
+	border-radius:2px;
+  }
